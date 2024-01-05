@@ -365,10 +365,15 @@ button {
 }
 .values-items {
   width: 288px;
-  margin-bottom: 72px;
   margin: 0 auto;
-  margin-bottom: 72px;
 }
+@media only screen and (max-width: 767.98px) {
+  .values-items:not(:last-child)   {   
+      margin-bottom: 72px;
+    }
+  }
+
+
 @media only screen and (min-width: 768px) {
   .values-items {
     width: 356px;
