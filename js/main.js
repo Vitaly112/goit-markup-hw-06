@@ -12,12 +12,23 @@ document.addEventListener('DOMContentLoaded', function() {
         backdrop.classList.remove('is-open');
     });
     backdrop.addEventListener('click', function(event) {
-    // Перевірка, чи клік відбувся поза модальним вікном
+ 
     if (event.target === backdrop) {
         backdrop.classList.remove('is-open');
-    }
+        }
+        
+    });
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            backdrop.classList.remove('is-open');
+        }
     });
 //     modal.addEventListener('click', function() {
 //     backdrop.classList.add('is-open');
 // });
 });
+
+
+
+
+    

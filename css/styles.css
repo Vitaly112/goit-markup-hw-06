@@ -1255,3 +1255,8 @@ button {
 .hide {
   display: none;
 }
+
+
+.hero-button:hover ~ .modal {
+  display: block;
+}
